@@ -37,7 +37,7 @@ export default function HeroProfile() {
         <div className="space-y-2.5 text-center md:text-left flex-1">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-50 border border-pink-200/80 text-pink-600 text-xs font-semibold">
             <Sparkles className="w-3.5 h-3.5" />
-            CV For Internship
+            Portfolio
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
             Ma Wai Wai Phoo Kyaw
