@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+[transition-style] {
+  --transition__duration: 0.7s;
+  --transition__easing: cubic-bezier(0.22, 1, 0.36, 1);
+}
