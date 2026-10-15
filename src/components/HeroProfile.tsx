@@ -19,12 +19,22 @@ function GithubIcon({ className = "w-4 h-4" }: { className?: string }) {
 
 export default function HeroProfile() {
   return (
-    <section
-      transition-style="in:wipe:down"
-      className="fade-up bg-white rounded-2xl p-6 sm:p-8 border border-pink-100 shadow-[0_2px_12px_rgba(244,114,182,0.06)]"
-    >
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-        <div className="space-y-2.5">
+    <section className="fade-up bg-white rounded-2xl p-6 sm:p-8 border border-pink-100 shadow-[0_2px_12px_rgba(244,114,182,0.06)]">
+      <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+        
+        {}
+        <div className="shrink-0">
+          <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-pink-50/80 border-2 border-pink-200 shadow-sm">
+            <img
+              src="/profile.jpg"
+              alt="Ma Wai Wai Phoo Kyaw"
+              className="w-full h-full rounded-full object-cover object-top"
+            />
+          </div>
+        </div>
+
+        
+        <div className="space-y-2.5 text-center md:text-left flex-1">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-50 border border-pink-200/80 text-pink-600 text-xs font-semibold">
             <Sparkles className="w-3.5 h-3.5" />
             CV For Internship
@@ -32,33 +42,34 @@ export default function HeroProfile() {
           <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
             Ma Wai Wai Phoo Kyaw
           </h1>
-          <p className="text-sm text-slate-600 flex flex-wrap items-center gap-x-2 gap-y-1">
+          <p className="text-sm text-slate-600 flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1">
             <span className="font-medium text-pink-600">Final Year Computer Science</span>
             <span>•</span>
             <span>University of Computer Studies (Meiktila)</span>
           </p>
-        </div>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-white bg-pink-500 hover:bg-pink-600 active:translate-y-0.5 transition shadow-[0_4px_12px_rgba(236,72,153,0.25)]"
-          >
-            <FolderGit2 className="w-4 h-4" />
-            Project Experiences
-          </a>
-          <a
-            href="https://github.com/waiwaiphookyaw1122-hue"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-700 bg-pink-50/60 hover:bg-pink-100/70 border border-pink-200 transition"
-          >
-            <GithubIcon className="w-4 h-4 text-pink-600" />
-            GitHub
-          </a>
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-white bg-pink-500 hover:bg-pink-600 active:translate-y-0.5 transition shadow-[0_4px_12px_rgba(236,72,153,0.25)]"
+            >
+              <FolderGit2 className="w-4 h-4" />
+              Project Experiences
+            </a>
+            <a
+              href="https://github.com/waiwaiphookyaw1122-hue"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-700 bg-pink-50/60 hover:bg-pink-100/70 border border-pink-200 transition"
+            >
+              <GithubIcon className="w-4 h-4 text-pink-600" />
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
+      
       <div className="mt-6 pt-5 border-t border-pink-100/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
         <div className="flex items-center gap-2.5 text-slate-600">
           <div className="w-7 h-7 rounded-lg bg-pink-50 text-pink-500 flex items-center justify-center shrink-0">
